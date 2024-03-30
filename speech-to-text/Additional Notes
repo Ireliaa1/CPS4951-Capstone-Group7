@@ -1,5 +1,6 @@
 Audio Format
     https://www.gyan.dev/ffmpeg/builds/#release-builds
+    Modify environment variables
     Use ffmpeg to change the audio mode to meet the audio format of Baidu speech recognition.
     We uniformly convert the audio format to wav
     and the format is:
