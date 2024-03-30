@@ -1,0 +1,14 @@
+Audio Format
+    https://www.gyan.dev/ffmpeg/builds/#release-builds
+    Use ffmpeg to change the audio mode to meet the audio format of Baidu speech recognition.
+    We uniformly convert the audio format to wav
+    and the format is:
+    Codec: PCM_S16LE
+    Audio channel: mono (1.0)
+    Frequency: 16000 Hz (8000 is fine)
+
+API:
+    Using Baidu Short Speech Recognition Standard Edition API, Mandarin Chinese
+    Free quota until the end of September
+    Total 150,000 times, concurrent 5
+    Contact email: 1847051055@qq.com
