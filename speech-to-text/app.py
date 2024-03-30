@@ -13,7 +13,7 @@ import wave
 app = Flask(__name__)
 CORS(app)
 
-# 配置百度语音识别 API
+# Configuring the Baidu Speech Recognition API
 APP_ID = '58902875'
 API_KEY = 'QVowgInd9Zf3jdeEifI1qLdi'
 SECRET_KEY = 'PKUg0EAuOd5XEUPbjZTimMC9s8kAxdZ5'
@@ -51,7 +51,7 @@ def speech_to_text():
             print("No audio file uploaded.")
             return jsonify({'success': False, 'error': 'No audio file uploaded'})
         
-        # 获取上传的音频文件
+        # Get the uploaded audio file
         audio_file = request.files['audio']
         audio_content = audio_file.read()
 
@@ -61,7 +61,7 @@ def speech_to_text():
         print("Sending audio content to Baidu Speech Recognition API...")
         result = aipSpeech.asr(wav_content, 'wav', 16000, {
             'lan': 'zh', 
-            'dev_pid': 1537  # 设置语言类型为普通话
+            'dev_pid': 1537   # Set the language type to Mandarin
         })
         print("Response received from Baidu Speech Recognition API.")
         
